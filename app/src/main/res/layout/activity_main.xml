@@ -13,14 +13,14 @@
         android:id="@+id/imageStar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="68dp"
+        android:layout_marginBottom="48dp"
         android:background="@drawable/starempty"
         android:contentDescription="@string/app_name"
         android:src="@drawable/starempty"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
-
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/mainText"
@@ -44,28 +44,29 @@
         android:id="@+id/mainText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#F0E9D6"
         android:gravity="center"
         android:text="Чтобы узнать значение карты можете перейти в ТГ @MERIMARTOCHKA"
         android:textColor="@color/black"
-        android:background="#F0E9D6"
         android:textSize="24sp"
         android:textStyle="bold"
         android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/imageStar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.718" />
+        app:layout_constraintVertical_bias="0.955" />
 
     <ImageView
         android:id="@+id/imageCard"
-        android:layout_width="279dp"
-        android:layout_height="474dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="275dp"
+        android:layout_height="475dp"
+        app:layout_constraintBottom_toTopOf="@+id/mainText2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.146" />
+        app:layout_constraintVertical_bias="0.271"
+        tools:src="@drawable/card" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
