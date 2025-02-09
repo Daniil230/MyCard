@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 viewModel.loadCardImage();
                 Random random = new Random();
-                int number = random.nextInt(76);
+                int number = random.nextInt(78);
                 Log.d("MainActivity", "number: " + number);
                 setCardsImage(number);
                 mainText.setVisibility(View.INVISIBLE);
@@ -329,6 +329,14 @@ public class MainActivity extends AppCompatActivity {
             case 75 :
                 imageCard.setImageResource(R.drawable.desyatka_pentaklei);
                 yourCard.setText("ДЕСЯТКА ПЕНТАКЛЕЙ");
+                break;
+            case 76 :
+                imageCard.setImageResource(R.drawable.kolesnica);
+                yourCard.setText("КОЛЕСНИЦА");
+                break;
+            case 77 :
+                imageCard.setImageResource(R.drawable.tuz_pentakley);
+                yourCard.setText("ТУЗ ПЕНТАКЛЕЙ");
                 break;
             default:
                 imageCard.setImageResource(R.drawable.shut);
