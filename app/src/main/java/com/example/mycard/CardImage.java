@@ -1,20 +1,24 @@
 package com.example.mycard;
 
+
+import android.content.Context;
+import android.graphics.drawable.Drawable;
+
+import androidx.core.content.ContextCompat;
+
+import java.util.List;
+
 public class CardImage {
-    private String name;
+    private int nhits;
+    private List<Card> cards;
 
-    @Override
-    public String toString() {
-        return "CardImage{" +
-                "name='" + name + '\'' +
-                '}';
+    public int getNhits() {
+        return nhits;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public CardImage(String name) {
-        this.name = name;
+    public List<Card> getCards() {
+        return cards;
     }
 }
+
+

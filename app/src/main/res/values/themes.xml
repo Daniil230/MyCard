@@ -2,8 +2,11 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.MyCard" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-    </style>
+        <item name="colorPrimary">@color/colorPrimary_white</item>
+        <item name="android:background">@drawable/back_white</item>
+        <item name="android:textColor">@color/black</item>
 
+    </style>
     <style name="Theme.MyCard" parent="Base.Theme.MyCard" />
+
 </resources>

@@ -5,9 +5,73 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back_white"
+
     tools:context=".MainActivity">
 
+
+    <TextView
+        android:id="@+id/mainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_shadow_end_color"
+        android:gravity="center"
+        android:text="Здесь вы можете узнать свою карту на день
+звёздочка подскажет вашу судьбу"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <TextView
+        android:id="@+id/mainText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#EDD691"
+        android:gravity="center"
+        android:text="Чтобы узнать значение карты можете перейти в ТГ https://t.me/MERIMARTOCHKA"
+        android:autoLink="web"
+        android:textColor="#373B46"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/imageStar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.955" />
+
+
+    <TextView
+        android:id="@+id/yourCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:text="Ваша карта"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintBottom_toTopOf="@+id/imageCard" />
+
+    <ImageView
+        android:id="@+id/imageCard"
+        android:layout_width="170dp"
+        android:layout_height="300dp"
+        android:background="@color/cardview_shadow_end_color"
+        app:layout_constraintBottom_toTopOf="@+id/mainText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.642"
+        app:layout_constraintHorizontal_bias="0.456" />
 
     <ImageButton
         android:id="@+id/imageStar"
@@ -22,51 +86,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/mainText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Здесь вы можете узнать свою карту на день
-звёздочка подскажет вашу судьбу"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.287" />
 
-    <TextView
-        android:id="@+id/mainText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#F0E9D6"
-        android:gravity="center"
-        android:text="Чтобы узнать значение карты можете перейти в ТГ @MERIMARTOCHKA"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/imageStar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.955" />
 
-    <ImageView
-        android:id="@+id/imageCard"
-        android:layout_width="275dp"
-        android:layout_height="475dp"
-        app:layout_constraintBottom_toTopOf="@+id/mainText2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.322"
-        tools:src="@drawable/card" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
